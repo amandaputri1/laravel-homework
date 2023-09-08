@@ -13,9 +13,9 @@ use App\Http\Controllers\PerpustakaanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/perpustakaan/anggota', [PerpustakaanController::class, 'anggota'])
 ->name('get_anggota');
@@ -23,3 +23,7 @@ Route::get('/perpustakaan/buku', [PerpustakaanController::class, 'buku'])
 ->name('get_buku');
 Route::get('/perpustakaan/petugas', [PerpustakaanController::class, 'petugas'])
 ->name('get_petugas');
+
+// Route::get('/', function () {
+//     return view('layouts.master');
+// });
