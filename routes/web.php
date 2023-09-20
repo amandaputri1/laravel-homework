@@ -34,3 +34,4 @@ Route::get('/', function () {
 // });
 
 Route::resource('/anggota', AnggotaController::class);
+Route::resource('/petugas', PetugasController::class);

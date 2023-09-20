@@ -32,12 +32,10 @@
                             <!-- /.card-header -->
 
                             <!-- form start -->
-                            <form>
+                            <form action="{{route('petugas.store')}}" method="POST">
+                                @csrf
                                 <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="id_petugas">ID Petugas</label>
-                                        <input class="form-control" type="text" name="id_petugas" id="id_petugas" placeholder="Masukan ID">
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="nama_petugas">Nama Petugas</label>
                                         <input class="form-control" type="text" name="nama_petugas" id="nama_petugas" placeholder="Masukan nama petugas">
@@ -52,13 +50,13 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                             </div>
-                                            <input type="number" class="form-control"
+                                            <input type="number" class="form-control" name="no_telpon"
                                                 data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat</label>
-                                        <textarea class="form-control" rows="3" placeholder="Masukan alamat"></textarea>
+                                        <textarea class="form-control" name="alamat_petugas" rows="3" placeholder="Masukan alamat"></textarea>
                                     </div>
                         </div>
 
@@ -66,11 +64,11 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                         </form>
+                        </div>
                     </div>
-                </div>{{-- form --}}
+                </div>
             </div>
         </div>
     </div>
-    <!-- /.content -->
-    </div>
+    
 @endsection
