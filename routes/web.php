@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     AnggotaController,
     BukuController,
-    PetugasController
+    PetugasController,
+    AuthController
 };
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,14 @@ use App\Http\Controllers\{
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::controller(AuthController::class)->group(function() {
+    Route::get('/register', 'register')->name('auth.register');
+    Route::post('/store', 'store')->name('auth.store');
+    Route::get('/login', 'login')->name('auth.login');
+    Route::post('/auth', 'authentication')->name('auth.authentication');
+    Route::get('/dashboard', 'dashboard')->name('auth.dashboard');
+    Route::post('/logout', 'logout')->name('auth.logout');
+});
 
 
 Route::get('/', function () {
