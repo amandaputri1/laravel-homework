@@ -36,7 +36,7 @@
                   </a>
               </li>
               <li class="nav-item">
-                  <a href="{{ route('anggota.create') }}" class="nav-link">
+                  <a href="{{ route('anggota.index') }}" class="nav-link">
                       <i class="nav-icon fas fa-th"></i>
                       <p>
                           Data Anggota
@@ -44,7 +44,7 @@
                   </a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="{{ route('buku.index')}}" class="nav-link">
                       <i class="nav-icon fas fa-th"></i>
                       <p>
                           Data Buku
@@ -52,7 +52,7 @@
                   </a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="{{ route('petugas.index')}}" class="nav-link">
                       <i class="nav-icon fas fa-th"></i>
                       <p>
                           Data Petugas

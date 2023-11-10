@@ -72,7 +72,7 @@
                                         <select class="custom-select {{ $members[0]->jurusan_anggota}}" name="jurusan_anggota">
                                             <option selected disabled>Pilih Jurusan</option>
                                             <option>RPL</option>
-                                            <option>DPIB</option>
+                                            <option>DPIB</option>c
                                             <option>TP</option>
                                             <option>TFLM</option>
                                             <option>TEI</option>

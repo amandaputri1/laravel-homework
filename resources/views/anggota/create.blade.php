@@ -83,7 +83,7 @@
                                     <div class="form-group">
                                             <label>Alamat</label>
                                             <textarea class="form-control" name="alamat_anggota"  rows="3" placeholder="Masukan alamat"></textarea>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-primary">Submit</button>

@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     AnggotaController,
-    BukuController,
     PetugasController,
-    AuthController
+    AuthController,
+    RakController,
+    BukuController,
+    PeminjamanController
 };
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +46,7 @@ Route::get('/', function () {
 
 Route::resource('/anggota', AnggotaController::class);
 Route::resource('/petugas', PetugasController::class);
+Route::resource('/rak', RakController::class);
+Route::resource('/buku', BukuController::class);
+Route::resource('/peminjaman', PeminjamanController::class);
+
